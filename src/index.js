@@ -1,8 +1,5 @@
-import {
-  fetchCountries,
-  parseCountries,
-  parseSingleCountry,
-} from './js/fetchCountries';
+import { fetchCountries } from './js/fetchCountries';
+import { parseCountries, parseSingleCountry } from './js/parseCountries';
 import debounce from 'lodash.debounce';
 import { Notify } from 'notiflix';
 import './css/country.scss';
@@ -19,6 +16,7 @@ const infoWrapper = document.querySelector('.country-info');
 searchInput.addEventListener('input', debounced);
 async function getCountries(e) {
   listElement.innerHTML = '';
+  ß;
   infoWrapper.innerHTML = '';
   const name = e.target.value.trim();
   if (!name) return;
