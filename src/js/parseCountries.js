@@ -25,4 +25,3 @@ export const parseSingleCountry = country => {
 	<p> <span class="country-info__title"> Languages: </span>${parsedLanguages}</p>`;
   return parsedCountry;
 };
-ß;
